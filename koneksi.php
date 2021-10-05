@@ -1,9 +1,7 @@
-<?php 
-$koneksi = mysqli_connect("localhost","root","","multi_user");
- 
+<?php
+$koneksi = mysqli_connect("localhost", "root", "root", "dss_moora");
+
 // Check connection
-if (mysqli_connect_errno()){
-	echo "Koneksi database gagal : " . mysqli_connect_error();
+if (mysqli_connect_errno()) {
+    echo "Koneksi database gagal : " . mysqli_connect_error();
 }
- 
-?>
